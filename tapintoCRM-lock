@@ -62,11 +62,11 @@
 
   <script>
     function checkPassword() {
-      const password = "tapinto2024"; // <-- cambia la contraseña aquí
+      const password = "Great_Proyect"; 
       const input = document.getElementById("passwordInput").value;
 
       if (input === password) {
-        window.location.href = "TAPintoCRM.html"; // <-- página que quieres proteger
+        window.location.href = "TAPintoCRM.html"; 
       } else {
         alert("Incorrect password");
       }
