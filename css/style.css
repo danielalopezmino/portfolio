@@ -1001,3 +1001,26 @@ figure figcaption {
     height: auto;
     align-content: center;
   }
+
+<style>
+  /* Hace que todas las cards tengan la misma altura */
+  .blog_entry {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* Fuerza misma altura en todas las imágenes */
+  .project-thumb {
+    width: 100%;
+    height: 220px;      /* puedes ajustar a 200, 240, etc */
+    object-fit: cover;  /* recorta sin deformar */
+    display: block;
+  }
+
+  /* Asegura que el contenido interno se distribuya correctamente */
+  .blog_entry .p-4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
