@@ -8,22 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
   
   <style>
-    /* RESET Y BASE BASADO EN TU CSS */
     body {
       margin: 0;
       padding: 0;
-      background: #000; /* bg-black */
+      background: #000; 
       font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      color: #666666;
     }
 
     .box {
-      background: #333333; /* site-footer background */
-      padding: 50px;
+      background: #333333; 
+      padding: 40px 50px;
       border-radius: 15px;
       width: 100%;
       max-width: 450px;
@@ -31,81 +29,89 @@
       box-shadow: 0 15px 35px rgba(0,0,0,0.5);
     }
 
+    /* ESTILO PARA TU LOGOTIPO */
+    .site-logo-container {
+      margin-bottom: 30px;
+    }
+    .site-logo-container img {
+      max-width: 150px; /* Ajusta el tamaño según sea tu logo */
+      height: auto;
+    }
+
     h2 {
-      color: #fff !important; /* h1, h2... color: #000 en tu CSS, pero aquí necesitamos blanco */
-      font-size: 2rem;
-      margin-bottom: 15px;
+      color: #fff !important;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
       font-weight: 700;
     }
 
     p {
-      color: rgba(255, 255, 255, 0.5); /* text-white-opacity-05 */
-      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.6;
       margin-bottom: 30px;
     }
 
-    /* EL INPUT: Aplicando tu estilo .form-control */
     .form-control-custom {
-      height: 43px;
+      height: 45px;
       width: 100%;
       background: transparent !important;
       color: #fff !important;
       border: none;
-      border-bottom: 2px solid rgba(255, 255, 255, 0.5) !important;
-      border-radius: 0; /* Quitamos el redondeado para que se vea como tu diseño de formularios */
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+      border-radius: 0;
       padding: 10px 0;
       font-size: 1rem;
       margin-bottom: 30px;
       outline: none;
       transition: .3s all ease;
-      display: block;
+      text-align: center;
       box-sizing: border-box;
     }
 
     .form-control-custom:focus {
-      border-color: #EAB624 !important; /* Tu color dorado de acento */
+      border-color: #EAB624 !important;
     }
 
-    /* EL BOTÓN: Aplicando tu estilo .btn-primary */
     .btn-custom {
-      background: #EAB624; /* Color principal dorado de tu CSS */
+      background: #EAB624;
       border: 2px solid #EAB624;
       color: #fff;
-      padding: 10px 40px;
-      font-size: 16px;
-      font-weight: 400;
+      padding: 12px 40px;
+      font-size: 14px;
+      font-weight: 700;
       border-radius: 30px;
       cursor: pointer;
       transition: .3s all ease;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       width: 100%;
     }
 
     .btn-custom:hover {
-      background: transparent;
-      color: #EAB624;
+      background: #000;
+      border-color: #000;
     }
 
     .hint {
       margin-top: 25px;
       font-size: 0.85rem;
-      color: #737373; /* color de p en site-footer */
+      color: #737373;
     }
 
-    /* Fix para evitar el color crema del autocompletado de Chrome */
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover, 
-    input:-webkit-autofill:focus {
-      -webkit-text-fill-color: #fff;
-      -webkit-box-shadow: 0 0 0px 1000px #333333 inset;
-      transition: background-color 5000s ease-in-out 0s;
+    /* Fix Autocompletado */
+    input:-webkit-autofill {
+      -webkit-text-fill-color: #fff !important;
+      -webkit-box-shadow: 0 0 0px 1000px #333333 inset !important;
     }
   </style>
 </head>
 
 <body>
   <div class="box">
+    <div class="site-logo-container">
+      <img src="TU_LOGOTIPO.png" alt="Logo">
+    </div>
+
     <h2>Protected Project</h2>
     <p>This project is password protected.<br>Please enter the password to continue.</p>
 
@@ -128,7 +134,6 @@
       }
     }
 
-    // Soporte para tecla Enter
     document.getElementById("passwordInput").addEventListener("keyup", function(event) {
       if (event.key === "Enter") { checkPassword(); }
     });
