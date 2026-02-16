@@ -4,64 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Protected Project</title>
-
+  
   <style>
+    /* Estilos adicionales para centrar el contenido usando la estética de tu web */
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #000; /* Fondo negro como tus secciones bg-black */
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
       margin: 0;
     }
+    
     .box {
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      width: 360px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      background: #333333; /* El color de tu site-footer */
+      padding: 40px;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .form-control {
+      margin-bottom: 20px;
       text-align: center;
     }
-    input {
-      width: 100%;
-      padding: 12px;
-      margin: 12px 0;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      font-size: 14px;
+
+    h2 {
+      color: #fff !important;
+      margin-bottom: 20px;
+      font-weight: 700;
     }
-    button {
-      width: 100%;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      background: #111;
-      color: #fff;
-      font-size: 14px;
-      cursor: pointer;
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
     }
+
     .hint {
-      font-size: 12px;
-      color: #666;
-      margin-top: 12px;
+      font-size: 0.8rem;
+      margin-top: 20px;
+      color: #999999;
     }
   </style>
+  
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-black">
   <div class="box">
-    <h2>This project is password protected</h2>
-    <p>Please enter the password to continue.</p>
+    <h2 class="h3">Protected Project</h2>
+    <p>This project is password protected.<br>Please enter the password to continue.</p>
 
-    <input type="password" id="passwordInput" placeholder="Enter password" />
-    <button onclick="checkPassword()">Enter</button>
+    <input type="password" id="passwordInput" class="form-control" placeholder="Enter password" />
+    
+    <button onclick="checkPassword()" class="btn btn-primary btn-block">Enter</button>
 
-    <p class="hint">If you need access, contact me.</p>
+    <p class="hint">If you need access, please contact me.</p>
   </div>
 
   <script>
     function checkPassword() {
+      // Nota: Recuerda que esto es solo una protección visual básica
       const password = "Great_Proyect"; 
       const input = document.getElementById("passwordInput").value;
 
@@ -71,6 +75,13 @@
         alert("Incorrect password");
       }
     }
+
+    // Permitir presionar "Enter" en el teclado
+    document.getElementById("passwordInput").addEventListener("keyup", function(event) {
+      if (event.key === "Enter") {
+        checkPassword();
+      }
+    });
   </script>
 </body>
 </html>
