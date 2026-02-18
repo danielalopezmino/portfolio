@@ -1049,3 +1049,19 @@ figure figcaption {
   clear: both;
 }
 
+.specialties-list li {
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: #555;
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.6;
+}
+
+.specialties-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #000;
+  font-weight: 600;
+}
