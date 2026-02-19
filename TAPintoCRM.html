@@ -19,61 +19,38 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    /* Estilos base del contenido */
     .blog-content {
       font-size: 1.1rem;
       line-height: 1.8;
       color: #333;
     }
-
     .blog-content p {
       margin-bottom: 1.5rem;
     }
 
-    /* --- NUEVOS ESTILOS PARA IMÁGENES DE GRAN FORMATO --- */
-    .full-width-image {
-      /* Rompe el contenedor de 8 columnas para expandirse */
-      margin-left: calc(-20vw + 50%);
-      margin-right: calc(-20vw + 50%);
-      width: 85vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      transform: translateX(-50%);
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-    }
-
-    .full-width-image img {
+    /* Estilo para imágenes grandes y elegantes */
+    .portfolio-full-img {
       width: 100%;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
-      display: block;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 10px;
     }
 
-    .full-width-image figcaption {
+    .portfolio-figure {
+      margin: 4rem 0;
+      width: 100%;
+    }
+
+    .portfolio-figure figcaption {
       text-align: center;
       font-size: 0.85rem;
       font-style: italic;
-      padding-top: 20px;
       color: #888;
       text-transform: uppercase;
       letter-spacing: 1.5px;
+      margin-top: 15px;
     }
-
-    /* Ajuste para móviles: que no se desborde */
-    @media (max-width: 768px) {
-      .full-width-image {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        left: 0;
-        transform: none;
-      }
-    }
-
-    /* --------------------------------------------------- */
 
     blockquote {
       padding: 30px;
@@ -91,17 +68,9 @@
       margin: 0 auto;
     }
 
-    .skills-section {
-      background: #fff;
-      padding: 40px;
-      border-radius: 8px;
-      margin-top: 60px;
-      border: 1px solid #eee;
-    }
-
     .is-sticky .site-navbar {
       background-color: #fff !important;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
   </style>
 </head>
@@ -168,22 +137,27 @@
 
     <section class="site-section">
       <div class="container">
+        
         <div class="row justify-content-center">
           <div class="col-md-8 blog-content">
-
             <p class="lead mb-5">
-              CONTEXT
-              <br>
+              CONTEXT <br> 
               Before TAPinto designed its custom CRM, users relied on HubSpot for contact management. However, there was a discrepancy: while HubSpot is a robust enterprise tool, it was never fully adopted at scale for TAPinto's primary revenue stream: local advertising sales.
             </p>
+          </div>
+        </div>
 
-            <div class="full-width-image" data-aos="fade-up">
-              <figure>
-                <img src="images/1_crm.jpg" alt="CRM - Existing Setup">
-                <figcaption>Existing CRM context</figcaption>
-              </figure>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <figure class="portfolio-figure">
+              <img src="images/1_crm.jpg" class="portfolio-full-img" alt="CRM - Existing Setup">
+              <figcaption>Existing CRM context</figcaption>
+            </figure>
+          </div>
+        </div>
 
+        <div class="row justify-content-center">
+          <div class="col-md-8 blog-content">
             <blockquote>
               <h4>Problems with the Existing Setup</h4>
               <p>
@@ -209,18 +183,23 @@
               - Their level of technical confidence
               - What they needed to feel comfortable managing content on a daily basis
             </p>
+          </div>
+        </div>
 
-            <div class="full-width-image" data-aos="fade-up">
-              <figure>
-                <img src="images/2_user_research.jpg" alt="User Research">
-                <figcaption>Research survey findings with town editors</figcaption>
-              </figure>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <figure class="portfolio-figure">
+              <img src="images/2_user_research.jpg" class="portfolio-full-img" alt="User Research">
+              <figcaption>Research survey findings with town editors</figcaption>
+            </figure>
+          </div>
+        </div>
 
+        <div class="row justify-content-center">
+          <div class="col-md-8 blog-content">
             <blockquote class="blog-quote">
               <H3>“This feels like a tool for large companies.”<br>“I’m afraid of breaking something.”</H3>
             </blockquote>
-
             <h4>Key Insights </h4>
             <p>The research confirmed that the issue was not adoption, but a structural mismatch between the tool and its users:
               - Editors perceived the CRM as “designed for large companies, not local newsrooms”
@@ -229,89 +208,107 @@
               <br><br>
               These insights supported the decision to move away from a generic CRM and design a custom tool tailored to non-technical users and real daily workflows.
             </p>
-
             <h4>Design Starting Point </h4>
             <p>This context became the foundation for all design decisions that followed.
               The challenge was not to simplify an existing CRM, but to design a tool that matched how editors actually think and work.
-              From this point on, the focus shifted from managing contacts in a generic system to designing a clear, safe, and scalable editorial experience.
             </p>
+          </div>
+        </div>
 
-            <div class="full-width-image" data-aos="fade-up">
-              <figure>
-                <img src="images/3_login.jpg" alt="Login CRM">
-                <figcaption>CRM Login</figcaption>
-              </figure>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <figure class="portfolio-figure">
+              <img src="images/3_login.jpg" class="portfolio-full-img" alt="Login CRM">
+              <figcaption>CRM Login</figcaption>
+            </figure>
+          </div>
+        </div>
 
+        <div class="row justify-content-center">
+          <div class="col-md-8 blog-content">
             <h4>Core Workflow · Contact Management</h4>
             <p>
-              The core workflow focused on enabling editors to manage contacts confidently and efficiently, without overwhelming them with unnecessary options.
-              Design decisions included:
+              The core workflow focused on enabling editors to manage contacts confidently and efficiently:
               - Clear hierarchy of primary actions
               - Editorial language instead of CRM jargon
               - Progressive disclosure of advanced fields
-              - Consistent patterns across views
             </p>
-
-            <div class="full-width-image" data-aos="fade-up">
-              <figure>
-                <img src="images/4_search.gif" alt="Dashboard">
-                <figcaption>Contact Managment</figcaption>
-              </figure>
-            </div>
-
-            <h4>Activity Tracking & Transparency</h4>
-            <p> To support collaboration and accountability, the CRM included a clear and accessible activity log.
-              Instead of hiding complexity, the goal was to organize it in a way that felt understandable and safe for non-technical users.
-            </p>
-
-            <div class="full-width-image" data-aos="fade-up">
-              <figure>
-                <img src="images/5_Activities.gif" alt="Activities">
-                <figcaption>Register Activitie</figcaption>
-              </figure>
-            </div>
-
-            <h4>Time-Based Features · Notifications & Agenda</h4>
-            <p> As the network scaled, editors needed support to manage timing, follow-ups, and reminders without relying on external tools.
-              Notifications and agenda features were designed to integrate naturally into daily workflows, reducing cognitive load and manual effort. </p>
-
-            <div class="full-width-image" data-aos="fade-up">
-              <figure>
-                <img src="images/6_Notifications-agenda.gif" alt="Agenda">
-                <figcaption>General Agenda</figcaption>
-              </figure>
-            </div>
-
-            <h4>System Overview</h4>
-            <p>The dashboard and contacts index were designed to provide clarity at a glance, helping editors understand what required attention without feeling overwhelmed.</p>
-
-            <div class="full-width-image" data-aos="fade-up">
-              <figure>
-                <img src="images/7_dashboard.jpg" alt="Dashboard">
-                <figcaption>Dashboard</figcaption>
-              </figure>
-            </div>
-
-            <h4>Design System & Technical Alignment</h4>
-            <p>To ensure consistency, scalability, and technical feasibility, the team adopted Ant Design as the foundation of the CRM’s visual system.
-              Aligned with this decision, I reconstructed and adapted Ant Design’s core components in Figma (tables, forms, modals, buttons, pagination, tabs, etc.), building a component library that matched the development stack.
-              This approach allowed us to:
-              - Design highly realistic prototypes.
-              - Reduce friction between design and development.
-              - Ensure visual consistency across the entire platform.
-              - Think in terms of systems rather than isolated screens.
-            </p>
-
-            <div class="full-width-image" data-aos="fade-up">
-              <figure>
-                <img src="images/8_ANT Design.jpg" alt="ANT design">
-                <figcaption>ANT design</figcaption>
-              </figure>
-            </div>
-
           </div>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <figure class="portfolio-figure">
+              <img src="images/4_search.gif" class="portfolio-full-img" alt="Dashboard">
+              <figcaption>Contact Managment</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 blog-content">
+            <h4>Activity Tracking & Transparency</h4>
+            <p> To support collaboration, the CRM included a clear and accessible activity log organized for non-technical users.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <figure class="portfolio-figure">
+              <img src="images/5_Activities.gif" class="portfolio-full-img" alt="Activities">
+              <figcaption>Register Activitie</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 blog-content">
+            <h4>Time-Based Features · Notifications & Agenda</h4>
+            <p> Notifications and agenda features were designed to integrate naturally into daily workflows.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <figure class="portfolio-figure">
+              <img src="images/6_Notifications-agenda.gif" class="portfolio-full-img" alt="Agenda">
+              <figcaption>General Agenda</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 blog-content">
+            <h4>System Overview</h4>
+            <p>The dashboard and contacts index provide clarity at a glance.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <figure class="portfolio-figure">
+              <img src="images/7_dashboard.jpg" class="portfolio-full-img" alt="Dashboard">
+              <figcaption>Dashboard</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 blog-content">
+            <h4>Design System & Technical Alignment</h4>
+            <p>Adopted Ant Design as the foundation of the CRM’s visual system to ensure consistency and reduce friction between design and development.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <figure class="portfolio-figure">
+              <img src="images/8_ANT Design.jpg" class="portfolio-full-img" alt="ANT design">
+              <figcaption>ANT design</figcaption>
+            </figure>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -323,8 +320,7 @@
             <p>Gracias por llegar hasta aquí, sigamos en contacto.</p>
             <p>daniela.lopez.mino@gmail.com<br>Madrid, Spain</p>
           </div>
-          <div class="col-md-6 text-center">
-          </div>
+          <div class="col-md-6 text-center"></div>
           <div class="col-md-3">
             <h3 class="footer-title">Sígueme</h3>
             <a href="https://www.instagram.com/madlo_mi/" class="social-circle p-2"><span class="icon-instagram"></span></a>
