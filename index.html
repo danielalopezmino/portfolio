@@ -1,345 +1,197 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>DanyLópez &mdash; Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>DanyLópez &mdash; Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- Removed duplicate -->
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="site-wrap">
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <div class="site-wrap">
-
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-        <div class="site-mobile-menu-body"></div>
       </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
 
-      <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-center">
-
-            <div class="">
-              <nav class="site-navigation position-relative text-right" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                  <li><a href="#home-section" class="nav-link">Portfolio</a></li>
-                  <li><a href="#blog-section" class="nav-link">Proyectos UI/UX</a></li>
-
-                </ul>
-              </nav>
-            </div>
-
-            <div class="text-center mx-5">
-              <img
-                src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/logo_dany_lopez.png?raw=true"
-                width="85"
-                alt="Logo Dany López"
-              />
-              <!-- <h1 class="m-0 site-logo"><a href="index.html">Credo</a></h1> -->
-            </div>
-
-            <div class="text-left">
-              <nav class="site-navigation position-relative" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                  <li><a href="#portfolio-section" class="nav-link">Otros proyectos</a></li>
-                  <li><a href="#about-section" class="nav-link">Sobre mi</a></li>
-                </ul>
-              </nav>
-
-              <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;">
-                <a href="#" class="site-menu-toggle js-menu-toggle float-right">
-                  <span class="icon-menu h3"></span>
-                </a>
-              </div>
-            </div>
-
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+          <nav class="site-navigation position-relative text-right" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li><a href="#home-section" class="nav-link">Portfolio</a></li>
+              <li><a href="#blog-section" class="nav-link">Proyectos UI/UX</a></li>
+            </ul>
+          </nav>
+          <div class="text-center mx-5">
+            <img src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/logo_dany_lopez.png?raw=true" width="85" alt="Logo Dany López" />
+          </div>
+          <nav class="site-navigation position-relative" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li><a href="#portfolio-section" class="nav-link">Otros proyectos</a></li>
+              <li><a href="#about-section" class="nav-link">Sobre mi</a></li>
+            </ul>
+          </nav>
+          <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;">
+            <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <div class="site-blocks-cover overlay bg-light" id="home-section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
-              <div class="row">
-                <div class="col-lg-6">
-                  <h2 class="text-white">Hola!</h2>
-                  <h4 class="text-white">UI/UX Designer</h4>
-                  <br>
-                  <h5 class="lead" style="color: whitesmoke;">
-                  Más que solo diseñar pantallas, me gusta conectar con realidades. Durante más de 4 años, el diseño UX/UI ha sido mi herramienta para conectar necesidades humanas con productos digitales que funcionen en entornos complejos, vibrantes y desordenados.
-                  Diseño productos para gente real. Mi forma de trabajar se enfoca en agudizar los sentidos para revelar necesidades y porqués. Mi meta es tomar la complejidad técnica u organizacional y convertirla en algo claro; algo que, por encima de todo, funcione cuando las personas lo tengan en sus manos.
-                  <br>
-                </div>
+    <div class="site-blocks-cover overlay bg-light" id="home-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2 class="text-white">Hola!</h2>
+                <h4 class="text-white">UI/UX Designer</h4>
+                <br>
+                <h5 class="lead" style="color: whitesmoke;">
+                  Más que solo diseñar pantallas, me gusta conectar con realidades...
+                </h5>
               </div>
             </div>
           </div>
         </div>
-
-        <img
-          src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/bkground%20copy_colo_amarillos_peq.jpg?raw=true"
-          alt="Background"
-          class="img-face"
-        >
       </div>
-
-      
-
-     <section class="site-section bg-light" id="blog-section">
-  <div class="container">
-    
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2 class="section-title text-center">Proyectos UI/UX</h2>
-      </div>
+      <img src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/bkground%20copy_colo_amarillos_peq.jpg?raw=true" alt="Background" class="img-face">
     </div>
 
-    <div class="row mb-5">
-      <div class="col-12">
-        <div class="blog_entry bg-white shadow-sm">
-          <a href="senirop.html">
-            <img src="images/img_2.jpg" alt="Senirop" class="img-fluid project-thumb w-100" style="height: 400px; object-fit: cover; border-radius: 15px 15px 0 0;">
-          </a>
-          <div class="p-4">
-            <h3 class="h2"><a href="senirop.html">Renovando plataformas desde el UI/UX</a></h3>
-            <p>Un renovado Dashboard, definiendo las necesidades del usuario empatizando con su labor diaria.</p>
-            <p class="more"><a href="senirop.html">View Case Study</a></p>
+    <section class="site-section bg-light" id="blog-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12">
+            <h2 class="section-title text-center">Proyectos UI/UX</h2>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      
-      <div class="col-lg-4 mb-4">
-        <div class="blog_entry bg-white h-100 shadow-sm">
-          <div class="p-4">
-            <h4><a href="senirop.html">TAPinto CRM</a></h4>
-            <p class="small">Making complex internal tools feel simple for our local editors.</p>
-            <img src="images/0_CRM_allscreens.jpg" class="img-fluid mt-3" alt="">
-             
-        </div>
-      </div>
-
-      <div class="col-lg-4 mb-4">
-        <div class="blog_entry bg-white h-100 shadow-sm">
-          <div class="p-4">
-            <h4><a href="senirop.html">TAPinto CRM</a></h4>
-            <p class="small">App para comprar, vender e intercambiar arte en tu ciudad.</p>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mb-4">
-        <div class="blog_entry bg-white h-100 shadow-sm">
-          <div class="p-4">
-            <h4>And another one</h4>
-            <p class="small">Call out a feature, benefit, or value that can stand on its own.</p>
-            <div class="text-center">
-               <img src="images/artup_galleryart.jpg" class="img-fluid" style="max-height: 150px;" alt="">
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="blog_entry bg-white shadow-sm">
+              <a href="senirop.html">
+                <img src="images/img_2.jpg" alt="Senirop" class="img-fluid project-thumb w-100" style="height: 400px; object-fit: cover; border-radius: 15px 15px 0 0;">
+              </a>
+              <div class="p-4">
+                <h3 class="h2"><a href="senirop.html">Renovando plataformas desde el UI/UX</a></h3>
+                <p>Un renovado Dashboard, definiendo las necesidades del usuario empatizando con su labor diaria.</p>
+                <p class="more"><a href="senirop.html">View Case Study</a></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-    </div> </div> </section>
-
- <section class="site-section" id="portfolio-section" class="site-section block__62272" style="clear: both; padding-top: 5em; width: 100%;">
-  
-  <div class="container"> 
-    <div class="row mb-5">
-      <div class="col-12 text-center">
-        <h2 class="section-title mb-5">Otros proyectos</h2>
-      </div>
-    </div>
-    </div>
-
-
-     
-          <div class="row">
-            <div class="col-md-6 col-lg-4 item">
-              <a href="https://www.behance.net/gallery/153241055/Branding-para-Milanesa-Gigante" class="item-wrap mb-4">
-                <span></span>
-                <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/2_milanesa_gigante_entrada.png?raw=true" alt="Branding Milanesa Gigante" loading="lazy">
-              </a>
-              <a href="https://www.behance.net/gallery/154522811/Warmi-Forajida-Podcast" class="item-wrap mb-4">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/warmi_podcast_entrada.jpg?raw=true" alt="Warmi Forajida Podcast" loading="lazy">
-              </a>
-              <a href="https://www.behance.net/gallery/153241425/Y18" class="item-wrap mb-4">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/8y18.png?raw=true" alt="Proyecto Y18" loading="lazy">
-              </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4 item">
-              <a href="https://www.behance.net/gallery/153247917/Todos-somos-letras-fotoreportaje" class="item-wrap mb-4">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/4imprenta_fotoreportaje_entrada.png?raw=true" alt="Todos somos letras - fotoreportaje" loading="lazy">
-              </a>
-              <a href="https://www.behance.net/gallery/155094953/Walking-by-Beijing" class="item-wrap mb-4">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/imagen_fotografia_entrada.jpg?raw=true" alt="Walking by Beijing" loading="lazy">
-              </a>
-              <a href="https://www.behance.net/gallery/153242039/The-Male-Box" class="item-wrap mb-4">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/malebox_portada.jpg?raw=true" alt="The Male Box" loading="lazy">
-              </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4 item">
-              <a href="https://www.behance.net/gallery/154510111/Ellas-Box-Product-Photography?tracking_source=project_owner_other_projects" class="item-wrap mb-4">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/malebox/ellas_basket_socks_opt.jpg?raw=true" alt="Ellas Box - Product Photography" loading="lazy">
-              </a>
-              <a href="https://www.behance.net/gallery/153246877/Tiendas-Locales-soporte-en-Pandemia" class="item-wrap mb-4">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/REPORTAJE_VECIS_entrada.png?raw=true" alt="Tiendas Locales - soporte en pandemia" loading="lazy">
-              </a>
-              <a href="https://www.behance.net/gallery/244362221/Ruku-Consulting-Branding" class="item-wrap mb-4">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/9_Slides_ruku.png?raw=true" alt="Brand design" loading="lazy">
-              </a>
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="blog_entry bg-white h-100 shadow-sm">
+              <div class="p-4">
+                <h4><a href="tapintoCRM-lock.html">TAPinto CRM</a></h4>
+                <p class="small">Making complex internal tools feel simple for our local editors.</p>
+                <img src="images/0_CRM_allscreens.jpg" class="img-fluid mt-3" alt="">
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-
-<div class="site-section" id="about-section">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-12 mb-4 position-relative">
-        <h2 class="section-title">Sobre mi</h2>
-      </div>
-
-      <div class="col-lg-6 order-2 order-lg-1">
-        <img class="img-fluid mb-4"
-             src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/foto_perfil.jpg?raw=true"
-             alt="Foto de perfil"
-             loading="lazy">
-
-        <p>
-          Diseño no solo la apariencia de una marca, sino la lógica que sostiene su experiencia.
-          Me muevo entre identidad e interfaz, construyendo sistemas visuales consistentes que conectan dirección estética con funcionalidad real.
-          Mi formación en Comunicación Social fortaleció mi capacidad de investigar, interpretar contextos y traducir información compleja en decisiones claras de diseño.
-          Trabajo desde una perspectiva multicultural que amplía mi lectura de audiencias, comportamientos y códigos visuales.
-          Tecnología, imagen y comunicación no son intereses paralelos: son parte estructural de cómo observo, analizo y diseño.
-        </p>
-      </div>
-
-      <div class="col-lg-6 order-3 pl-lg-5 order-lg-2">
-        <div class="mb-4">
-          <h4 class="text-black mb-4">Especialidades</h4>
-        </div>
-
-        <ul class="specialties-list list-unstyled">
-         <li>Diseño de productos digitales centrados en personas reales</li>
-          <li>Simplificación de sistemas complejos</li>
-          <li>UX/UI para herramientas internas y plataformas B2B</li>
-          <li>Creación y evolución de Design Systems</li>
-          <li>Diseño de componentes production-ready (estados, variantes, responsive)</li>
-          <li>Gestión y definición de Design Tokens</li>
-          <li>Documentación clara y accionable para equipos</li>
-          <li>Colaboración estrecha con desarrollo (design-to-code alignment)</li>
-          <li>QA visual y control de consistencia</li>
-          <li>Accesibilidad aplicada (WCAG y buenas prácticas)</li>
-          <li>Acompañamiento a equipos en adopción de sistemas de diseño</li>
-          <li>Iteración basada en feedback real de usuarios</li>
-          <li>Integración consciente de herramientas de IA en procesos creativos</li>
-
-        </ul>
-      </div>
-
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
-</div> <!-- /#about-section -->
-
-</section>
-    
-      <footer class="site-section bg-light footer">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-3">
-              <h3 class="footer-title">Portafolio</h3>
-              <p>Gracias por llegar hasta aquí, sigamos en contacto.</p>
-              <p><span class="d-inline-block d-md-block">daniela.lopez.mino@gmail.com</span> Madrid, Spain</p>
+          <div class="col-lg-4 mb-4">
+            <div class="blog_entry bg-white h-100 shadow-sm">
+              <div class="p-4">
+                <h4><a href="https://www.behance.net/gallery/164468545/UI-Ux-case-study-Art-App">ArtUp Gallery</a></h4>
+                <p class="small">App para comprar, vender e intercambiar arte en tu ciudad (Validado con 17 encuestas).</p>
+                <img src="images/artup_galleryart.jpg" class="img-fluid mt-3" alt="">
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-5 mx-auto">
-              <div class="row">
-                <div class="col-lg-4">
-                  <h3 class="footer-title"></h3>
-                  <ul class="list-unstyled"></ul>
-                </div>
-                <div class="col-lg-4">
-                  <h3 class="footer-title"></h3>
-                  <ul class="list-unstyled"></ul>
-                </div>
-                <div class="col-lg-4">
-                  <h3 class="footer-title"></h3>
-                  <ul class="list-unstyled"></ul>
+          <div class="col-lg-4 mb-4">
+            <div class="blog_entry bg-white h-100 shadow-sm">
+              <div class="p-4">
+                <h4>Proyectos Futuros</h4>
+                <p class="small">Explora más casos de estudio sobre diseño centrado en el usuario.</p>
+                <div class="text-center mt-3">
+                   <div style="height: 100px; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center;">Próximamente</div>
                 </div>
               </div>
             </div>
-
-            <div class="col-md-3">
-              <h3 class="footer-title">Sígueme</h3>
-              <a href="https://www.instagram.com/madlo_mi/" class="social-circle p-2" aria-label="Instagram">
-                <span class="icon-instagram"></span>
-              </a>
-              <a href="https://www.behance.net/madlo_mi" class="social-circle p-2" aria-label="Behance">
-                <span class="icon-behance"></span>
-              </a>
-              <a href="https://www.linkedin.com/in/daniela-lopez-mino/" class="social-circle p-2" aria-label="LinkedIn">
-                <span class="icon-linkedin"></span>
-              </a>
-            </div>
           </div>
+        </div> 
+      </div> 
+    </section>
 
-          <div class="row">
-            <div class="col-12 text-center">
-              <p>
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script>
-                Todos los derechos reservados
-              </p>
-            </div>
+    <section class="site-section" id="portfolio-section">
+      <div class="container"> 
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-5">Otros proyectos</h2>
           </div>
         </div>
-      </footer>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 item">
+            <a href="https://www.behance.net/gallery/153241055/Branding-para-Milanesa-Gigante" class="item-wrap mb-4">
+              <img class="img-fluid" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/2_milanesa_gigante_entrada.png?raw=true" alt="Branding">
+            </a>
+            </div>
+          </div>
+      </div>
+    </section>
 
-    </div><!-- .site-wrap -->
+    <div class="site-section" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <h2 class="section-title">Sobre mi</h2>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid mb-4" src="https://github.com/danielalopezmino/danielalopezmino.github.io/blob/master/foto_perfil.jpg?raw=true" alt="Perfil">
+            <p>Diseño no solo la apariencia de una marca, sino la lógica que sostiene su experiencia...</p>
+          </div>
+          <div class="col-lg-6 pl-lg-5">
+            <h4 class="text-black mb-4">Especialidades</h4>
+            <ul class="specialties-list list-unstyled">
+              <li>Diseño de productos digitales...</li>
+              <li>Simplificación de sistemas complejos...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
+    <footer class="site-section bg-light footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <h3 class="footer-title">Portafolio</h3>
+            <p>daniela.lopez.mino@gmail.com <br> Madrid, Spain</p>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h3 class="footer-title">Sígueme</h3>
+            <a href="#" class="social-circle p-2"><span class="icon-instagram"></span></a>
+            <a href="#" class="social-circle p-2"><span class="icon-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  </body>
+  </div> <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
 </html>
